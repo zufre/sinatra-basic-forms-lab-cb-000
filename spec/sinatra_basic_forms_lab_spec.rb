@@ -31,7 +31,6 @@ describe "Puppy Adoption Site" do
     end
 
     it "renders the puppy input fields for name, breed, and age attributes on the page" do
-      # binding.pry
       expect(last_response.body).to include("name")
       expect(last_response.body).to include("breed")
       expect(last_response.body).to include("age")
