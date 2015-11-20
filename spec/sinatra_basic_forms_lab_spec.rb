@@ -1,61 +1,47 @@
-
 require 'pry'
-describe "Puppy Adoption Site" do
-  describe "GET '/'" do
-    before(:each) do
+describe App do
+
+  describe 'GET /' do
+    
+    it 'sends a 200 status code' do
       get '/'
-    end
-
-    it "returns a 200 status code" do
       expect(last_response.status).to eq(200)
     end
 
-    it "renders a welcome" do
-      expect(last_response.body).to include("Welcome to the puppy adoption site!")
-      expect(last_response.body).to include("Click Here To List A Puppy")
+    it 'renders welcome' do 
+      visit '/'
+      expect(page).to have_link("Click Here To List A Puppy")
     end
   end
 
-  describe "GET '/new'" do
-    before(:each) do
-      get '/new'
-    end
-
-    it "returns a 200 status code" do
+  describe 'GET /NEW' do 
+    it 'sends a 200 status code' do
+      get '/'
       expect(last_response.status).to eq(200)
     end
 
-    it "renders a new form element on the page" do
-      expect(last_response.body).to include("<form")
-      expect(last_response.body).to include("</form>")
-    end
-
-    it "renders the puppy input fields for name, breed, and age attributes on the page" do
-      expect(last_response.body).to include("name")
-      expect(last_response.body).to include("breed")
-      expect(last_response.body).to include("age")
+    it 'renders the form' do
+      visit '/new'
+      expect(page).to have_selector("form")
+      expect(page).to have_field(:name)
+      expect(page).to have_field(:breed)
+      expect(page).to have_field(:age)
     end
   end
 
-  describe "POST '/puppy'" do
-    before do
-      post '/puppy', {
-          "name"=>"Ian",
-          "breed"=>"Dalmation",
-          "age"=>"6",
-      }
-    end
+  describe 'POST /' do
+    it "displays the puppy" do 
+      visit '/new'
 
-    it "returns a 200 status code" do
-      expect(last_response.status).to eq(200)
+      fill_in(:name, :with => "Butch")
+      fill_in(:breed, :with => "Mastiff")
+      fill_in(:age, :with => "6 months")
+      click_button "submit"
+      expect(page).to have_text("Puppy Name:\nButch")
+      expect(page).to have_text("Puppy Breed:\nMastiff")
+      expect(page).to have_text("Puppy Age:\n6 months")
     end
-
-    it "displays the puppy information upon form submission" do
-      expect(last_response.body).to include("Ian")
-      expect(last_response.body).to include("Dalmation")
-      expect(last_response.body).to include("6")
-    end
+  end
 
   
-  end
 end
