@@ -1,9 +1,9 @@
 describe 'Puppy class' do 
   let!(:puppy) { Puppy.new("brad", "black lab", 2) }
 
-  it 'can create a new instance of the puppy class'
+  it 'can create a new instance of the puppy class' do
     expect(Puppy.new("brad", "black lab", 2)).to be_an_instance_of(Puppy)
-  do
+  end
 
   it 'can read a puppy name' do 
     expect(puppy.name).to eq("brad")
