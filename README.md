@@ -37,3 +37,5 @@ Add a link to the homepage to link to the new puppy form.
 
 
 
+
+<a href='https://learn.co/lessons/sinatra-basic-forms-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
