@@ -16,7 +16,7 @@ describe App do
 
   describe 'GET /NEW' do 
     it 'sends a 200 status code' do
-      get '/'
+      get '/new'
       expect(last_response.status).to eq(200)
     end
 
