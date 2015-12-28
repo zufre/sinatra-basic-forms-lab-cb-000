@@ -10,11 +10,11 @@ describe 'Puppy class' do
   end
 
   it 'can read a puppy breed' do 
-    expect(puppy.name).to eq("black lab")
+    expect(puppy.breed).to eq("black lab")
   end
 
   it 'can read a puppy age' do 
-    expect(puppy.name).to eq(2)
+    expect(puppy.age).to eq(2)
   end
 
   it 'can change puppy age' do 
