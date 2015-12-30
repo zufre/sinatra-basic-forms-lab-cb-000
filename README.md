@@ -18,7 +18,7 @@ Your local pet adoption store has asked you (a frequent dog walker and visitor) 
 
 3. The home page will also need a new view `index.erb`. This page should welcome you to the Puppy Adoption Site. Add this view to the controller action. 
 
-4. Now, we need to create a form for a user to list a new puppy that is available for adoption. You can create this form in `views/create_puppy.erb`. Remember, you'll need to set up another controller action for a user to be able to view this form in the browser.
+4. Now, we need to create a form for a user to list a new puppy that is available for adoption. You can create this form in `views/create_puppy.erb`. Remember, you'll need to set up another controller action for a user to be able to view this form in the browser. Another reminder: the "submit" button of a form is an `<input>` element with a `type` of `"submit"`, *not* a `<button>` element. 
 
 5. Now we need to make sure the form is being submitted properly. You'll need to have a third controller action that takes the input from the user and renders a third view (`views/dislay_puppy.erb`) which displays the info for the puppy that was just created.
 
