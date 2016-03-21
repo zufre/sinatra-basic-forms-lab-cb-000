@@ -20,7 +20,7 @@ Your local pet adoption store has asked you (a frequent dog walker and visitor) 
 
 4. Now, we need to create a form for a user to list a new puppy that is available for adoption. You can create this form in `views/create_puppy.erb`. Remember, you'll need to set up another controller action for a user to be able to view this form in the browser. Another reminder: the "submit" button of a form is an `<input>` element with a `type` of `"submit"`, *not* a `<button>` element. 
 
-5. Now we need to make sure the form is being submitted properly. You'll need to have a third controller action that takes the input from the user and renders a third view (`views/dislay_puppy.erb`) which displays the info for the puppy that was just created.
+5. Now we need to make sure the form is being submitted properly. You'll need to have a third controller action that takes the input from the user and renders a third view (`views/display_puppy.erb`) which displays the info for the puppy that was just created.
 
 6. Add a link to the homepage to link to the new puppy form.
 
@@ -28,3 +28,5 @@ Your local pet adoption store has asked you (a frequent dog walker and visitor) 
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-basic-forms-lab' title='Sinatra Basic Forms Lab'>Sinatra Basic Forms Lab</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-basic-forms-lab'>Sinatra Basic Forms Lab</a> on Learn.co and start learning to code for free.</p>
