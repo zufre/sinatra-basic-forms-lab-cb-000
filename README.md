@@ -22,7 +22,7 @@ Your local pet adoption store has asked you (a frequent dog walker and visitor) 
 
 5. Now we need to make sure the form is being submitted properly. You'll need to have a third controller action that takes the input from the user and renders a third view (`views/display_puppy.erb`) which displays the info for the puppy that was just created.
 
-6. Add a link to the homepage to link to the new puppy form.
+6. Add a link on the homepage to the new puppy form.
 
 
 
@@ -30,3 +30,5 @@ Your local pet adoption store has asked you (a frequent dog walker and visitor) 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-basic-forms-lab' title='Sinatra Basic Forms Lab'>Sinatra Basic Forms Lab</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-basic-forms-lab'>Sinatra Basic Forms Lab</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-basic-forms-lab'>Sinatra Basic Forms Lab</a> on Learn.co and start learning to code for free.</p>
