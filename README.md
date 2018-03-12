@@ -15,7 +15,7 @@ the view
 
 ## Instructions
 
-The focus of this lab is to build out a way for a user to go to a 'homepage,'
+The focus of this lab is to build a way for a user to go to a homepage,
 follow a link to a form where they can enter a puppy's information, and, upon
 submission, view the puppy's information.
 
@@ -23,7 +23,7 @@ submission, view the puppy's information.
 breed, and age attributes. You will need to be able to pass these three
 attributes to initialization, as well as readers and writers for the attributes.
 
-2. In `app.rb` build out a GET request to load a home page. The home page
+2. In `app.rb` build out a GET request to load a homepage. The homepage
 should go to the main route `/`. 
 
 3. The home page will also need a new view `index.erb`. This page should
